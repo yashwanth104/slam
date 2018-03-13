@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.geekoder.slamee"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+<uses-permission android:name="android.permission.CALL_PHONE" />
+<uses-feature android:name="android.hardware.camera" />
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-feature android:name="android.hardware.camera.autofocus" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/new_custom" >
+        <activity
+            android:name="com.geekoder.slamee.Splash1Activity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        
+         <activity android:name=".Splash2" android:label="splash" android:noHistory="true"/>
+       <activity android:name=".Tutorial" android:label="tutorial" android:noHistory="true"></activity>
+        <activity android:name=".Pass_login" android:label="login" android:noHistory="true" ></activity>
+        <activity android:name=".Home_page" android:label="home" ></activity>
+        <activity android:name=".Security" android:label="security" ></activity>
+         <activity android:name=".Set_password" android:label="password" android:noHistory="true"></activity>
+         <activity android:name=".Set_picpassword" android:label="picpassword" android:noHistory="true" ></activity>
+         <activity android:name=".Pic_login" android:label="piclogin" android:noHistory="true"></activity>
+         <activity android:name=".Settings" android:label="settings"></activity>
+          <activity android:name=".Change_pass" android:label="Changepassword"></activity>
+        <activity android:name=".Change_picpass" android:label="Change picpassword"></activity>
+        <activity android:name=".Userpass_permit" android:label="userpermitpassword"></activity>
+        <activity android:name=".Userpic_permit" android:label="userpermitpic"></activity>
+        <activity android:name=".User_info" android:label="userinfo"></activity>
+         <activity android:name=".Userinfo_change" android:label="userinfochange"></activity>
+         <activity android:name=".Create_Slamee" android:label="createslamee"></activity>
+         <activity android:name=".List_View" android:label="listView"></activity>
+         <activity android:name=".Slamee_View" android:label="slameeView"></activity>
+         <activity android:name=".Slamee_Pic" android:label="slameepic"></activity>
+         <activity android:name=".Info" android:label="info"></activity>
+         <activity android:name=".Home_page_open" android:label="home.open" ></activity>
+         <activity android:name=".Create_Slamee_open" android:label="crete.open" ></activity>
+         <activity android:name=".List_View_open" android:label="home.open" ></activity>
+         <activity android:name=".Forgot" android:label="forgot" ></activity>
+           <activity android:name=".Signature" android:label="forgot" ></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" 
+>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Your Info"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="50sp" />
+
+   <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="28dp"
+        android:ems="10" />
+
+   <TextView
+       android:id="@+id/textView2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/textView1"
+       android:layout_marginTop="84dp"
+       android:text="Name" />
+
+   <TextView
+       android:id="@+id/textView3"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/username"
+       android:layout_marginTop="40dp"
+       android:text="Question" />
+
+   <Spinner
+       android:id="@+id/question"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/username"
+       android:layout_alignTop="@+id/textView3" />
+
+   <TextView
+       android:id="@+id/questiontxt"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/question"
+       android:layout_marginTop="14dp"
+       android:text="Question" />
+
+   <EditText
+       android:id="@+id/question_edit"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBaseline="@+id/questiontxt"
+       android:layout_alignBottom="@+id/questiontxt"
+       android:layout_alignLeft="@+id/next"
+       android:ems="10" >
+
+       <requestFocus />
+   </EditText>
+
+   <Button
+       android:id="@+id/next"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_centerHorizontal="true"
+       android:layout_marginBottom="70dp"
+       android:background="@drawable/btn"
+       android:text="Next"
+       android:textColor="@color/FontColor" />
+
+   <TextView
+       android:id="@+id/textView4"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/question_edit"
+       android:layout_marginTop="22dp"
+       android:text="Answer" />
+
+   <EditText
+       android:id="@+id/answer_edit"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/question_edit"
+       android:layout_alignTop="@+id/textView4"
+       android:ems="10" />
+
+</RelativeLayout>
