@@ -10,7 +10,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
+//testing for auto build on push
 public class Change_pass extends Activity {
 TextView chng_hdr,chng_old_passtxt;
 EditText chng_old_pass;
